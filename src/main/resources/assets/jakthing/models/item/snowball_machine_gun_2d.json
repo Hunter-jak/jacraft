@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "jakthing:item/snowball_machine_gun"
+  }
+}

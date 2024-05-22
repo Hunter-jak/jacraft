@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "jakthing:item/snowball_machine_gun_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "jakthing:item/snowball_machine_gun_2d"
+    },
+    "ground": {
+      "parent": "jakthing:item/snowball_machine_gun_2d"
+    },
+    "fixed": {
+      "parent": "jakthing:item/snowball_machine_gun_2d"
+    }
+  }
+}
