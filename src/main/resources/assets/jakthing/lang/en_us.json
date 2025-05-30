@@ -2,5 +2,11 @@
   "item.jakthing.snowball_machine_gun": "Snowball Machine Gun",
   "creativetab.jakthing": "Jak's Thing",
   "enchantment.jakthing.multisnow": "Multisnow",
-  "enchantment.jakthing.recoil": "Recoil"
+  "enchantment.jakthing.recoil": "Recoil",
+  "entity.jakthing.living_potato": "Living Potato",
+  "item.jakthing.living_potato_item": "Living Potato",
+  "livingpotato.info": "Size: %s",
+  "livingpotato.info.health": "Health: (%s/%s)",
+  "livingpotato.info.size": "Size: (%s/%s)",
+  "livingpotato.info.fertilize": "Fertilize: (%s/%s)"
 }
