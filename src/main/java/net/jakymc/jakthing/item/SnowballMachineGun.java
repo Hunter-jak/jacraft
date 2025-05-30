@@ -1,6 +1,7 @@
 package net.jakymc.jakthing.item;
 
         import net.jakymc.jakthing.enchantment.JakEnchantment;
+        import net.minecraft.network.chat.Component;
         import net.minecraft.sounds.SoundEvents;
         import net.minecraft.sounds.SoundSource;
         import net.minecraft.world.InteractionHand;
@@ -60,16 +61,11 @@ public class SnowballMachineGun extends ProjectileWeaponItem {
         ItemStack snowball = player.getProjectile(stack);
         int multisnowLevel = EnchantmentHelper.getItemEnchantmentLevel(JakEnchantment.MULTISNOW.get(), stack);
         int powerLevel = EnchantmentHelper.getItemEnchantmentLevel(Enchantments.POWER_ARROWS, stack);
-        int recoil = EnchantmentHelper.getItemEnchantmentLevel(JakEnchantment.RECOIL.get(), stack);
         if (!snowball.isEmpty() || player.getAbilities().instabuild){
             if(!world.isClientSide){
                 if (remainingUseTicks > 0) {
                     for (int i = 0; i <= multisnowLevel; i++) {
                         shootSnowball(entity, world,multisnowLevel,powerLevel);
-                    }
-                    if(recoil>0){
-                        Vec3 vec = new Vec3(player.getX() - 2, player.getY() - 2, player.getZ() - 2);
-                        player.push(vec.x * 2, vec.y * 3, vec.z * 2);
                     }
                     world.playSound(null, entity.getX(), entity.getY(), entity.getZ(), SoundEvents.SNOWBALL_THROW, SoundSource.NEUTRAL, 0.5F, 0.4F / (world.getRandom().nextFloat() * 0.4F + 0.8F));
                 }

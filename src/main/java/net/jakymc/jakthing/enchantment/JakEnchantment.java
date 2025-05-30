@@ -17,8 +17,6 @@ public class JakEnchantment {
     public static final EnchantmentCategory SnowGun = EnchantmentCategory.create("snowball_machine_gun", (item -> item instanceof SnowballMachineGun));
     public static RegistryObject<Enchantment> MULTISNOW = ENCHANTMENTS.register("multisnow",
             ()->new MultiSnow(Enchantment.Rarity.RARE, SnowGun, EquipmentSlot.MAINHAND));
-    public static RegistryObject<Enchantment> RECOIL = ENCHANTMENTS.register("recoil",
-            ()->new Recoil(Enchantment.Rarity.VERY_RARE, SnowGun, EquipmentSlot.MAINHAND));
     public static void register(IEventBus eventBus){
         ENCHANTMENTS.register(eventBus);
     }
