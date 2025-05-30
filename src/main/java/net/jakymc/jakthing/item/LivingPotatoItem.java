@@ -49,7 +49,6 @@ public class LivingPotatoItem extends Item {
 
             level.addFreshEntity(potato);
 
-            // 消耗物品
             if (!player.isCreative()) {
                 stack.shrink(1);
             }
