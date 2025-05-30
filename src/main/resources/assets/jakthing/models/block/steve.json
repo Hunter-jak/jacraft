@@ -2,8 +2,8 @@
 {
     "credit": "Made with Blockbench",
     "textures": {
-      "0": "jakthing:block/stave",
-      "particle": "jakthing:block/stave"
+      "0": "jakthing:block/steve",
+      "particle": "jakthing:block/steve"
     },
     "elements": [
     {

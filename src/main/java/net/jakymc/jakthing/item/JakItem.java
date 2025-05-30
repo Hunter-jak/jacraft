@@ -1,6 +1,8 @@
 package net.jakymc.jakthing.item;
 
+import net.jakymc.jakthing.block.JakBlock;
 import net.jakymc.jakthing.entity.JakEntity;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -17,7 +19,7 @@ public class JakItem {
     public static final RegistryObject<Item> SMG = ITEMS.register("snowball_machine_gun", () -> new SnowballMachineGun());
     public static final RegistryObject<Item> LivingPotatoItem = ITEMS.register("living_potato_item", () -> new LivingPotatoItem());
     //Blocks
-//    public static final RegistryObject<Item> STAVECHEST_ITEM = ITEMS.register("stave_chest", () -> new BlockItem(STAVE_CHEST.get(), new Item.Properties()));
+    public static final RegistryObject<Item> STEVE_ITEM = ITEMS.register("steve", () -> new BlockItem(JakBlock.STEVE.get(), new Item.Properties()));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
