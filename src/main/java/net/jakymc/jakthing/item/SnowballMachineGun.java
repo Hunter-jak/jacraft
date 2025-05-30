@@ -63,7 +63,7 @@ public class SnowballMachineGun extends ProjectileWeaponItem {
         int recoil = EnchantmentHelper.getItemEnchantmentLevel(JakEnchantment.RECOIL.get(), stack);
         if (!snowball.isEmpty() || player.getAbilities().instabuild){
             if(!world.isClientSide){
-                if (remainingUseTicks % 1 == 0) {
+                if (remainingUseTicks > 0) {
                     for (int i = 0; i <= multisnowLevel; i++) {
                         shootSnowball(entity, world,multisnowLevel,powerLevel);
                     }
