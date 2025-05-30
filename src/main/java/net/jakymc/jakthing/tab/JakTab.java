@@ -17,7 +17,8 @@ public class JakTab {
             .icon(() -> SMG.get().getDefaultInstance())
             .displayItems((parameters, output) -> {
                 output.accept(SMG.get());
-                output.accept(LIVINGPOTATO_SPAWN_EGG.get());
+//                output.accept(TestRing.get());
+                output.accept(LivingPotatoItem.get());
 //                output.accept(STAVECHEST_ITEM.get());
             }).build());
     public static void register(IEventBus eventBus){

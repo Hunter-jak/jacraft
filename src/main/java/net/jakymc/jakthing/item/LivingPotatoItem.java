@@ -25,7 +25,6 @@ public class LivingPotatoItem extends Item {
                 .stacksTo(1)
         );
     }
-
     @Override
     public InteractionResult useOn(UseOnContext context) {
         Level level = context.getLevel();
@@ -60,7 +59,6 @@ public class LivingPotatoItem extends Item {
 
         return super.useOn(context);
     }
-
     @Override
     public void inventoryTick(ItemStack stack, Level level, Entity entity, int slot, boolean selected) {
         if (!stack.hasTag()) {
